@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} Device detail {% endblock %}</title>
+</head>
+<body>
+    <h1> Device id : {{ device.id }} </h1>
+    <h3> device platform : {{ device.form_platform }} </h3>
+    <h3> device model : {{ device.model }} </h3>
+    <h3> device created_at : {{ device.created_at }} </h3>
+    <h3> device description : {{ device.description }} </h3>
+    <h3> device enabled : {{ device.enabled }} </h3>
+</body>
+</html>

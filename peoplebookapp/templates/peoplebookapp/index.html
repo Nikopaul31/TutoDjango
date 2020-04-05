@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {# Commentaire non visible dans la page finale grace au DTL #}
+    <!-- commentaire HTML present dans la page, inspecter la page pour voir -->
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Voici {{ name }} </h1>
+
+    {% comment "block commenté qui ne sera pas visible dans le HTML" %}
+    <h2>Titre commenté et nom visible</h2>
+    {% endcomment %}
+
+    <div>afficher ici l'image de {{ name }} </div>
+    <div>
+        <h2>informations sur l'image: </h2> </br>
+        nom du fichier: {{ picture.filename }} </br>
+        catégorie 1: {{ picture.categories.0 }} </br>
+        voici toutes les catégories de l'image dans une liste : </br>
+        <ul>
+            {% for categorie in picture.categories %}
+                <li> {{ categorie }}</li>
+            {% endfor %}
+        </ul>
+        voici toutes les catégories de l'image séparées par des virgules : </br>
+        {{ picture.categories|join:", " }}
+    </div>
+
+    <div>
+        <!-- exemple d'utilisation de "cycle", qui va nous permettre de colorer alternativement les lignes avec 2 couleurs -->
+        <table>
+            <tr style="background-color: {% cycle '#80e27e' '#087f23' as rowcolor %}" >
+                <td>resolution</td>
+                <td>1920*1080</td>
+            </tr>
+            <tr style="background-color: {% cycle rowcolor %}" >
+                <td>country</td>
+                <td>japan</td>
+            </tr>
+            <tr style="background-color: {% cycle rowcolor %}" >
+                <td>city</td>
+                <td>tokyo</td>
+            </tr>
+            <!-- si on n'utilise pas cycle, la derniere couleur du cycle peut etre utilisée -->
+            <tr style="background-color: {{ rowcolor }}" >
+                <td>format</td>
+                <td>jpeg</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

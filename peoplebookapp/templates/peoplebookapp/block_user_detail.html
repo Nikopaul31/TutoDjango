@@ -1,0 +1,15 @@
+{%load static %}
+
+<!--IMPORTANT: la variable user va etre recupérée lors de l'appel de block_user_detail mais aussi pour user_list !
+il faut donc que le nom de la variable dans la boucle soit le meme !-->
+
+<div class="userdetail">
+    {% with 'peoplebookapp/'|add:user.picture as filepath %}
+    <ul>
+        <li>Name : {{ user.name|title }}</li>
+        <li>Job : {{ user.job}}</li>
+    </ul>
+
+    <img class="center" src="{% static filepath %}" />
+    {% endwith %}
+</div>

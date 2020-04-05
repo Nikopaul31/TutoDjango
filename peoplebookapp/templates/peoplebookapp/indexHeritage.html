@@ -1,0 +1,12 @@
+{% extends "peoplebookapp/base.html" %}
+
+{% block title %}User details{% endblock title %}
+
+{% block content%}
+voici le content surchargé : </br>
+Content from indexHeritage.html </br>
+voici le content du parent : </br>
+{{ block.super }}
+{% endblock content %}
+
+

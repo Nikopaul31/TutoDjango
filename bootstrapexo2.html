@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap</title>
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+          crossorigin="anonymous">
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+            <img src="django.png" width="40" height="30" class="d-inline-block align-top">
+            My Bootstrap Site
+        </a>
+        <button type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                   <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="nav-link active">Contact</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h1 class="mt-3 mb-3">Contact me</h1>
+
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="firstName">First Name</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="First name"
+                       id="firstName">
+            </div>
+            <div class="form-group col-md-6">
+                <label for="lastName">Last Name</label>
+                <input type="text"
+                       class="form-control"
+                       placeholder="Last name"
+                       id="lastName">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email"
+                   class="form-control"
+                   placeholder="example@gmail.com"
+                   id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control"
+                      id="message" rows="5">
+            </textarea>
+        </div>
+
+        <button type="button"
+                class="btn btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#confirmModal">Send message
+        </button>
+
+        <div class="modal fade" id="confirmModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5>Confirmation</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+
+                    <div class="modal-body">
+                        Your message will be sent, are you sure?
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+</html>

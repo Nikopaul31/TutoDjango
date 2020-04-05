@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introduction to bootstrap</title>
+<!--    permet d importer directement bootstrap depuis le serveur, pas besoin d'import supplémentaire, A NE PAS FAIRE pour une vrai app !!!!!!!-->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+          crossorigin="anonymous">
+</head>
+<body>
+
+<!--javascript necessaire pour les boutons-->
+<!--class container nécessaire pour bootstrap, container: la page aura des marges, container-fluid: le contenu prendra toute la page-->
+<div class="container">
+    <h1>Introduction to bootstrap</h1>
+
+    <h1>Typographie</h1>
+    <h1>Titre 1</h1>
+    <h2>Titre 2</h2>
+    <h3>Titre 3</h3>
+    <h4>Titre 4</h4>
+
+    <p class="h1">Paragraph 1</p>
+    <p class="h2">Paragraph 2</p>
+    <p class="h3">Paragraph 3</p>
+    <p class="h4">Paragraph 4</p>
+
+    <h1>Mon titre principal <small class="text-muted"> avec sous-titre</small></h1>
+
+    <p class="lead">
+        Lorem ipsum bala jdsf asdf  oiszdfosijd  isqdjf ôijs^d sd sdijf sdf sjdfsdf js^di fj
+    </p>
+
+    <p>
+        lorem ipsum dfjsdfj oisj oijsdofj,; spdioifj po ;s dfokspo dk; sdofk psodfposdfpoksdpoofs  s^pdf ^pcv cv^p
+    </p>
+
+    <blockquote class="blockquote text-center">
+        <p>Une citation est toujours très profonde. Ou l'inverse</p>
+        <footer class="blockquote-footer text-right">Paul dans <cite>Lecon</cite></footer>
+    </blockquote>
+
+    <ul>
+        <li>Element 1</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+    </ul>
+
+    <ul class="list-inline">
+        <li class="list-inline-item">Element 1</li>
+        <li class="list-inline-item">Element 2</li>
+        <li class="list-inline-item">Element 3</li>
+    </ul>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm border border-primary">
+            Column 1
+        </div>
+
+        <div class="col-sm-6 border border-primary">
+            Column 2
+        </div>
+
+        <div class="col-sm border border-primary">
+            Column 3
+        </div>
+    </div>
+
+    <div>
+        <div class="row">
+            <div class="col-4 col-sm-2 border border-primary">
+                A
+            </div>
+
+            <div class="col-2 col-sm-2 border border-primary">
+                B
+            </div>
+
+            <div class="col-2 col-sm-8 border border-primary">
+                C
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container">
+    <h1>Tables</h1>
+
+    <table class="table table-hover table-striped table-bordered">
+        <thead class ="thead-dark">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <br/>
+
+    <div class="table-responsive">
+        <table class="table table-hover table-striped table-bordered">
+        <thead class ="thead-dark">
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+            <th>Header 3</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+            <td>Cell 3</td>
+        </tr>
+        </tbody>
+        </table>
+    </div>
+
+</div>
+
+<div class="container">
+    <h1>Buttons</h1>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <br/>
+    <br/>
+    <button type="button" class="btn btn-outline-primary">Outline button</button>
+    <br/>
+    <br/>
+    <a href="#" class="btn btn-danger">Danger link</a>
+    <br/>
+    <br/>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-primary">Normal</button>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <br/>
+    <br/>
+    <button type="button" class="btn btn-info btn-lg btn-block">Block Button</button>
+    <br/>
+    <br/>
+    <button type="button" class="btn btn-primary disabled">Disabled</button>
+    <br/>
+    <br/>
+    <div class="btn-group">
+        <button type="button" class="btn btn-secondary">Left</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Right</button>
+    </div>
+    <br/>
+    <br/>
+    <div class="btn-group-vertical">
+        <button type="button" class="btn btn-secondary">Top</button>
+        <button type="button" class="btn btn-secondary">Middle</button>
+        <button type="button" class="btn btn-secondary">Bottom</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Navbar</h1>
+<!--attribut possible pour la navbar fixe : sticky-top, fixed-bottom, fixed-top-->
+    <nav class="navbar sticky-top navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="django.png" width="40" height="30" class="d-inline-block align-top">
+            Django
+        </a>
+        <button type="button"
+                class="navbar-toggler"
+                data-toggle="collapse"
+                data-target="#navbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                   <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                   <a href="#" class="nav-link">Normal</a>
+                </li>
+                <li class="nav-item dropdown">
+                   <a href="#"
+                      class="nav-link dropdown-toggle"
+                      id="dropdown"
+                      data-toggle="dropdown">
+                        Dropdown
+                   </a>
+
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Item 1</a>
+                        <a class="dropdown-item" href="#">Item 2</a>
+                        <a class="dropdown-item" href="#">Item 3</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+    </p>
+</div>
+
+<div class="container">
+    <h1>Alerts</h1>
+    <div class="alert alert-primary">
+        Primary alert
+    </div>
+    <div class="alert alert-success">
+        Success alert
+    </div>
+    <div class="alert alert-danger">
+        Danger alert
+    </div>
+
+    <div class="alert alert-primary">
+        Alert with <a href="#" class="alert-link">a link</a> in the middle
+    </div>
+
+    <div class="alert alert-danger alert-dismisible fade show">
+        <h4 class="alert-heading">Danger</h4>
+        <button type="button" class="close" data-dismiss="alert">
+            <span>&times;</span>
+        </button>
+        <strong>You are about to delete important data</strong>
+        <hr>
+        <p class="mb-0">The action is irreversible</p>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Modal</h1>
+
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+        Display Modal
+    </button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    Do you really want to save this document?
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Forms</h1>
+
+    <form>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="name">Name</label>
+            <div class="col-sm-10">
+                <input type="email"
+                   class="form-control form-control-lg"
+                   placeholder="Your name"
+                   id="name">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="email">Email</label>
+            <div class="col-sm-10">
+                <input type="text"
+                       readonly
+                       class="form-control-plaintext"
+                       value="paul@django.com"
+                       id="email">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label" for="password">Password</label>
+            <div class="col-sm-10">
+                <input type="password"
+                       class="form-control"
+                       placeholder="Your Password"
+                       id="password">
+                <small class="form-text text-muted">
+                    Your password is safely encrypted!
+                </small>
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    </form>
+</div>
+
+<div class="container">
+
+    <h1>Media Object</h1>
+
+    <ul class="list-unstyled">
+        <li class="media">
+            <img class="align-self-start mr-3" width="64" height="64" src="img_avatar3.png">
+            <div class="media-body">
+                <h5 class="mt-0">Paul</h5>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+            </div>
+        </li>
+        <li class="media">
+            <div class="media-body">
+                <h5 class="mt-0">Bob</h5>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+            </div>
+            <img class="align-self-start mr-3" width="64" height="64" src="img_avatar3.png">
+        </li>
+        <li class="media">
+            <img class="align-self-center mr-3" width="64" height="64" src="img_avatar3.png">
+            <div class="media-body">
+                <h5 class="mt-0">John</h5>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+            </div>
+        </li>
+        <li class="media">
+            <div class="media-body">
+                <h5 class="mt-0">Tony</h5>
+                <hr>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit amet felis viverra, venenatis massa vel, tempus massa. Nulla neque metus, pulvinar eget nulla sed, facilisis ullamcorper nibh. Pellentesque condimentum sapien tortor, ut tempor nulla pretium eu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent vel eros vitae arcu rutrum tempor. Sed at nisi semper, tincidunt libero in, scelerisque massa. Duis sodales tempus metus et lacinia. Aliquam erat volutpat. Pellentesque laoreet arcu sem, id placerat arcu molestie vitae. Donec non mauris lacus. Phasellus imperdiet massa ac ipsum tristique, in tincidunt ipsum maximus. Cras varius commodo urna, iaculis consectetur massa egestas a. Pellentesque ex quam, venenatis eu molestie sit amet, consequat vitae massa. Duis elementum auctor neque, id accumsan ex bibendum quis.
+                </p>
+            </div>
+            <img class="align-self-center mr-3" width="64" height="64" src="img_avatar3.png">
+        </li>
+    </ul>
+
+</div>
+
+
+
+<!--toujours mettre jquery et popper avant bootstrap, bonne habitude de placer le JS a la fin du body-->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

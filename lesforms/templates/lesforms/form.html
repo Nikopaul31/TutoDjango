@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Testing form</title>
+</head>
+<body>
+
+<h1>Test form</h1>
+
+<form action="{% url 'get-form-data %}" method="post">
+<!--    permet de securiser le formulaire-->
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

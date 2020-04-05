@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List of devices with for a given OS</title>
+</head>
+<body>
+<h1> LIST DES APPAREILS POUR UN OS</h1>
+{% for device in devices %}
+<div>{% include 'myDevices/device_detail_page.html' %}</div>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,15 @@
+{% extends "peoplebookapp/base2.html" %}
+
+{% block title %}
+{{ block.super }}Details
+{% endblock title %}
+
+{% block content%}
+<h1>PeopleBook Detail : {{ user.name|title }}</h1>
+
+{% include "peoplebookapp/block_user_detail.html" %}
+
+<div>
+
+</div>
+{% endblock content %}

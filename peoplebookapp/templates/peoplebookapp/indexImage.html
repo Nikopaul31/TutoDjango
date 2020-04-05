@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<!--permet de charger les éléments contenu dans static-->
+{%load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Index image</title>
+<!--    reference ici au dossier static du projet et non de l'app-->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type ="text/css" media="screen">
+</head>
+
+<body>
+{% for picture in pictures %}
+<!--definie une variable (LOCALE a la boucle) for file path qui est la concatenation de 'peoplebookapp/' et du filename-->
+    {% with 'peoplebookapp/'|add:picture.filename as filepath %}
+    <div class="picture">
+        <h2>{{ picture.name }}</h2>
+        <img src="{% static filepath %}" />
+    </div>
+    {% endwith %}
+{% endfor %}
+</body>
+
+</html>

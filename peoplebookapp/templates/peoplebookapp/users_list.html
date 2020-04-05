@@ -1,0 +1,35 @@
+{% extends "peoplebookapp/base2.html" %}
+
+{% block title %}
+{{ block.super }}List
+{% endblock title %}
+
+{% block content%}
+<h1>
+    PeopleBook List
+</h1>
+
+{% if display == "full" %}
+<!--IMPORTANT: la variable user va etre recupérée lors de l'appel de block_user_detail mais aussi pour user_list !
+il faut donc que le nom de la variable dans la boucle soit le meme !-->
+    {% for key, user in users.items %}
+        <div>
+            {% include 'peoplebookapp/block_user_detail.html' %}
+        </div>
+    {% endfor %}
+
+{% else %}
+<div>
+    <ul>
+        {% for key, user in users.items %}
+        <li>
+            <!--appele de l'URL de detail. ici "key" est le parametre que l'on doit passer a cette URL pour quelle fonctionne-->
+            <a href="{% url 'peoplebook-user-detail' key %}">{{ user.name|title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endif %}
+
+
+{% endblock content %}
